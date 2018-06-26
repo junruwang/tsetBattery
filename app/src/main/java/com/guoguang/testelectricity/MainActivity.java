@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         }
         int flag=ioctlExec.openPort("/dev/ghgpiosel");
         Log.d(getClass().getName(),"flag=="+flag);
+        //蓝牙判断
         BluetoothAdapter bluetoothAdapter=BluetoothAdapter.getDefaultAdapter();
         if(bluetoothAdapter.isEnabled()){
             ioctlExec.setLightOn(5,0);
