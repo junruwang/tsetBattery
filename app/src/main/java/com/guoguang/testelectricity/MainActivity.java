@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         if(ioctlExec==null){
             ioctlExec=new IoctlExec();
         }
+        //打开
         int flag=ioctlExec.openPort("/dev/ghgpiosel");
         Log.d(getClass().getName(),"flag=="+flag);
         BluetoothAdapter bluetoothAdapter=BluetoothAdapter.getDefaultAdapter();
