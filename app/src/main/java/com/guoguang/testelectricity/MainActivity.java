@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 int level=intent.getIntExtra("level",0);
                 int scale=intent.getIntExtra("scale",0);
                 int percent=(level*100)/scale;
-                //textView.setText("当前电量为："+percent+"%");
+                textView.setText("当前电量为："+percent+"%");
                 if(percent>80){
                     ioctlExec.setLightOn(0,0);
                     ioctlExec.setLightOn(1,0);
